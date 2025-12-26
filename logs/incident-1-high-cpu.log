@@ -1,0 +1,18 @@
+Incident #1 – High CPU Usage
+
+Actual Output:
+- CloudWatch CPU usage exceeded 85%
+- SSH session became slow
+
+Expected Output:
+- CPU usage within normal limits (<40%)
+
+Root Cause:
+- stress command consuming CPU resources
+
+Solution Applied:
+- Stopped stress process
+
+Verification:
+- CloudWatch CPU normalized
+- nginx responded normally

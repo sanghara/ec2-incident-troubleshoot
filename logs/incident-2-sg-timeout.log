@@ -1,0 +1,17 @@
+Incident #2 – SSH Connection Timeout
+
+Actual Output:
+- SSH connection timed out
+
+Expected Output:
+- SSH connectivity available
+
+Root Cause:
+- Port 22 removed from Security Group inbound rules
+
+Solution Applied:
+- Restored SSH (port 22) inbound rule
+- Restricted access to trusted IP
+
+Verification:
+- SSH connection restored

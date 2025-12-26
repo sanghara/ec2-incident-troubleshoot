@@ -1,0 +1,18 @@
+Incident #3 – SSH Connection Refused
+
+Actual Output:
+- SSH error: Connection refused
+
+Expected Output:
+- SSH login successful
+
+Root Cause:
+- sshd service stopped
+- Incorrect permissions on authorized_keys
+
+Solution Applied:
+- Restarted sshd service
+- Applied chmod 600 to authorized_keys
+
+Verification:
+- SSH login successful

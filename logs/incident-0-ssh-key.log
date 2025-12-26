@@ -1,0 +1,19 @@
+Incident #0 – SSH Key Permission Issue
+
+Actual Output:
+- SSH error: Permission denied (publickey)
+- Identity file not accessible
+
+Expected Output:
+- Successful SSH login to EC2 instance
+
+Root Cause:
+- Incorrect key file path
+- Key permissions not set (chmod missing)
+
+Solution Applied:
+- Located correct key file
+- Applied chmod 400 to key file
+
+Verification:
+- SSH login successful
