@@ -101,3 +101,13 @@ ssh -i ~/Downloads/incident-key.pem ec2-user@<public-ip>
 
 ## Optional Scripts
 - scripts/monitoring.sh – Monitors CPU periodically and logs metrics
+
+
+## Repository Structure
+
+- **scripts/**
+  - `monitoring.sh` – Simple CPU monitoring script used during incidents
+- **logs/**
+  - `sample-incident.log` – Captured actual vs expected outputs
+- **docs/**
+  - Troubleshooting notes and observations

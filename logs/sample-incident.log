@@ -1,0 +1,17 @@
+Incident #1 – High CPU Usage
+
+Actual Output:
+- CloudWatch showed CPU spike above 85%
+- SSH session became slow
+
+Expected Output:
+- CPU usage within normal limits (<40%)
+
+Solution Applied:
+- Identified stress process
+- Stopped the process
+- CPU returned to normal
+
+Verification:
+- CloudWatch graph normalized
+- nginx responded normally
